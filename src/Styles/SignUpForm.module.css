@@ -1,0 +1,10 @@
+.signUpForm {
+  width: 350px;
+  text-align: center;
+}
+
+.radioButtonGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}

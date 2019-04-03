@@ -1,0 +1,22 @@
+.signUp {
+  background-image: url("../images/Background-sign-up.png");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signUpForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.header {
+  justify-content: space-between;
+  display: flex;
+}
+
+.header > *{
+  padding-top: 20px;
+}

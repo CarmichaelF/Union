@@ -1,0 +1,10 @@
+.titleContent {
+  font-size: 1.5em;
+  color: #3498db;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-weight: 500;
+  color: rgba(52, 152, 219, 0.75);
+}

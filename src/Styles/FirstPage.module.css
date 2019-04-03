@@ -1,20 +1,35 @@
 .firstPage {
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 90vh;
+}
+
+.content {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
+.title {
+  text-align: center;
+  color: #3498db;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .backgroundImage {
   width: 50%;
+  max-width: 500px;
 }
 
 @media (max-width: 768px) {
-  .firstPage {
+  .content {
     flex-direction: column;
   }
 
   .backgroundImage {
     width: 60%;
+    margin-bottom: 30px;
   }
 }

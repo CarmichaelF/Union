@@ -1,0 +1,44 @@
+.btn {
+  cursor: pointer;
+  padding: 5px 25px;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.btnPrimary {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.btnOutline {
+  background-color: #ffffff;
+  color: #3498db;
+  border: #3498db solid 2px;
+}
+
+.btnTransparent {
+  color: #ffffff;
+}
+
+.btnSidebar {
+  padding: 5px 20px;
+  color: #ffffff;
+  font-size: 1.5em;
+  transition: 0.4s;
+}
+
+.btnSidebar:hover {
+  background-color: #ffffff;
+  color: #3498db;
+  border-radius: 0;
+  transition: 0.4s;
+}
+
+.sidebarActive {
+  background-color: #ffffff;
+  color: #3498db;
+  border-radius: 0;
+  transition: 0.4s;
+}

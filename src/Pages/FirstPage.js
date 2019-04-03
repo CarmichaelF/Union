@@ -1,16 +1,22 @@
 import React, { Component } from "react";
 import styles from "../Styles/FirstPage.module.css";
 import LoginForm from "../Components/LoginForm";
+import Title from "../Components/Title";
+
 class FirstPage extends Component {
   render() {
+    const { title } = this.props;
     return (
       <div className={`${styles.firstPage} wrapper`}>
-        <img
-          className={styles.backgroundImage}
-          src={require("../images/background-login.svg")}
-          alt="Background"
-        />
-        <LoginForm className={styles.test} />
+        <Title>{title}</Title>
+        <div className={styles.content}>
+          <img
+            className={styles.backgroundImage}
+            src={require("../images/background-login.svg")}
+            alt="Background"
+          />
+          <LoginForm className={styles.test} />
+        </div>
       </div>
     );
   }
