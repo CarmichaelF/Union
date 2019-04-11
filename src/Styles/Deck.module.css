@@ -1,0 +1,29 @@
+.deck{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 50px;
+    color: #3498DB;
+    border: #3498DB 2px solid;
+    border-radius: 5px;
+}
+
+.deckTitle{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.deckSubtitle{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.deckSubtitleContent{
+    font-weight: 600;
+}
+
+.plusIcon{
+    color: #3498DB;
+    font-size: 4em;
+}

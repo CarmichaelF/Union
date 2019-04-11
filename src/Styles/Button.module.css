@@ -13,12 +13,34 @@
 }
 
 .btnOutline {
-  background-color: #ffffff;
+  background-color: transparent;
   color: #3498db;
   border: #3498db solid 2px;
 }
 
 .btnTransparent {
+  color: #3498db;
+}
+
+.btnGreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  background-color: #2ecc71;
+  width: 60px;
+  height: 60px;
+  color: #ffffff;
+}
+
+.btnRed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  width: 60px;
+  height: 60px;
+  background-color: #e74c3c;
   color: #ffffff;
 }
 

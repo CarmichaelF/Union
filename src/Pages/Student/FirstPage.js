@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import styles from "../Styles/FirstPage.module.css";
-import LoginForm from "../Components/LoginForm";
-import Title from "../Components/Title";
+import styles from "../../Styles/FirstPage.module.css";
+import LoginForm from "../../Components/LoginForm";
+import Title from "../../Components/Title";
 
 class FirstPage extends Component {
   render() {
@@ -12,7 +12,7 @@ class FirstPage extends Component {
         <div className={styles.content}>
           <img
             className={styles.backgroundImage}
-            src={require("../images/background-login.svg")}
+            src={require("../../images/background-login.svg")}
             alt="Background"
           />
           <LoginForm className={styles.test} />

@@ -25,7 +25,7 @@ class SignUpForm extends Component {
             <RadioButton name="student">Estudante</RadioButton>
             <RadioButton name="student">Professor</RadioButton>
           </div>
-          <Button to="/section">Cadastrar</Button>
+          <Button to="/student/section">Cadastrar</Button>
         </div>
       </>
     );

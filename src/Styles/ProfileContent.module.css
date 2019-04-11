@@ -1,0 +1,17 @@
+.profileContent{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form{
+    width: 350px;
+}
+
+.btnGroup{
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+}

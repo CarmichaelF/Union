@@ -4,14 +4,42 @@ import Input from "./Input";
 import Button from "./Button";
 
 class LoginForm extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      login: "",
+      password: ""
+    };
+  }
+
+  handleResult(type, value) {
+    switch (type) {
+      case "password":
+        this.setState({ password: value });
+        console.log(this.state);
+        break;
+      default:
+        this.setState({ login: value });
+        console.log(this.state);
+    }
+  }
+
   render() {
     return (
       <form className={styles.form}>
         <div className={styles.inputs}>
-          <Input type="email" name="email">
+          <Input
+            handleResult={this.handleResult.bind(this)}
+            type="email"
+            name="email"
+          >
             E-mail:{" "}
           </Input>
-          <Input name="password" type="password">
+          <Input
+            handleResult={this.handleResult.bind(this)}
+            name="password"
+            type="password"
+          >
             Senha:{" "}
           </Input>
         </div>
@@ -20,8 +48,12 @@ class LoginForm extends Component {
         </a>
 
         <div className={styles.btnGroup}>
-          <Button to="/section">Login</Button>
-          <Button type="outline" to="/signup">
+          {this.state.login === "s" ? (
+            <Button to="/student/section">Login</Button>
+          ) : (
+            <Button to="/teacher/section">Login</Button>
+          )}
+          <Button type="outline" to="/student/signup">
             Cadastre-se
           </Button>
         </div>

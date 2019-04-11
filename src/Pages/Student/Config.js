@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import styles from "../Styles/Config.module.css";
-import Sidebar from "../Components/Sidebar";
-import Container from "../Components/Container";
+import styles from "../../Styles/Config.module.css";
+import Sidebar from "../../Components/Sidebar";
+import Container from "../../Components/Container";
 
 class Config extends Component {
   render() {

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import styles from "../Styles/SignUp.module.css";
-import SignUpForm from "../Components/SignUpForm";
-import Button from "../Components/Button";
-import Title from "../Components/Title";
+import styles from "../../Styles/SignUp.module.css";
+import SignUpForm from "../../Components/SignUpForm";
+import Button from "../../Components/Button";
+import Title from "../../Components/Title";
 
 class SignUp extends Component {
   render() {
@@ -11,7 +11,7 @@ class SignUp extends Component {
         <div className={`wrapper $`}>
           <header className={styles.header}>
             <Button type="transparent">
-              <img src={require("../images/close.svg")} alt="Close icon" />
+              <img src={require("../../images/close.svg")} alt="Close icon" />
             </Button>
             <Title type="white">Union</Title>
           </header>

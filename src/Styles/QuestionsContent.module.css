@@ -1,0 +1,20 @@
+.questionsContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    text-align: left;
+    margin: 40px;
+}
+
+.optionContainer{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-between;
+}
+
+.questionsFooter{
+    display: flex;
+    justify-content: space-between;
+}
