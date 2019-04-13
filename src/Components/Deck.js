@@ -8,7 +8,7 @@ export default props => {
     case "add":
       return (
         <div className={styles.deck}>
-          <Button to="/teacher/teams" type="transparent">
+          <Button to="/teacher/config" type="transparent">
             {" "}
             <i className={`fas fa-plus ${styles.plusIcon}`} />
           </Button>

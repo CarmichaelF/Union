@@ -4,7 +4,7 @@ import LoginForm from "../../Components/LoginForm";
 import Title from "../../Components/Title";
 
 export default (props) =>{
-  const { title } = this.props;
+  const { title } = props;
     return (
       <div className={`${styles.firstPage} wrapper`}>
         <Title>{title}</Title>

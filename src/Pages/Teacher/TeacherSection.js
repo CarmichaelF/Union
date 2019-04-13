@@ -42,20 +42,6 @@ class TeacherSection extends Component {
             </div>
           </SectionContent>
         );
-      case "third":
-        return (
-          <SectionContent>
-            <TitleContent>
-              Aguarde enquanto conectamos{<br />}os jogadores
-            </TitleContent>
-            <div className={styles.dots}>
-              <div className={`${styles.dot} ${styles.dotOne}`} />
-              <div className={`${styles.dot} ${styles.dotTwo}`} />
-              <div className={`${styles.dot} ${styles.dotThree}`} />
-            </div>
-            <Button to="/student/questions">Questions</Button>
-          </SectionContent>
-        );
       default:
         return (
           <SectionContent>
@@ -77,11 +63,6 @@ class TeacherSection extends Component {
       case "second":
         this.setState({
           content: "second"
-        });
-        break;
-      case "third":
-        this.setState({
-          content: "third"
         });
         break;
       default:

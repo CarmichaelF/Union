@@ -19,6 +19,8 @@ Você deve rodar este script para que o projeto baixe as dependências necessár
 Abra a url [http://localhost:3000](http://localhost:3000) para ver
 no seu navegador
 
+Obs: Para entrar na interface de estudante o login é "s" e nenhuma senha é necessária, por padrão caso não seja inserido nenhum login o sistema irá encaminhar o usuário para a interface do professor.
+
 Caso você mude o projeto a página irá recarregar automaticamente.
 
 Você pode aprender mais sobre o React na [documentação oficial](https://reactjs.org/).
