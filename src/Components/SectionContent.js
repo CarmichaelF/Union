@@ -6,6 +6,8 @@ export default props => {
   switch (type) {
     case "start":
       return <div className={styles.sectionContentStart}>{children}</div>;
+    case "evenly":
+      return <div className={styles.sectionContentEvenly}>{children}</div>;
     default:
       return <div className={styles.sectionContent}>{children}</div>;
   }

@@ -1,0 +1,32 @@
+.student {
+  margin: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.studentName {
+  color: #2ecc71;
+  font-size: 1.2em;
+}
+
+.studentNameOff {
+  color: #e74c3c;
+  font-size: 1.2em;
+}
+
+.studentStatus {
+  width: 20px;
+  height: 20px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+  position: relative;
+}
+
+.studentStatusOff {
+  width: 20px;
+  height: 20px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  position: relative;
+}

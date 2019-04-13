@@ -53,7 +53,7 @@ class LoginForm extends Component {
           ) : (
             <Button to="/teacher/section">Login</Button>
           )}
-          <Button type="outline" to="/student/signup">
+          <Button type="outline" to="/signup">
             Cadastre-se
           </Button>
         </div>

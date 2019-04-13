@@ -6,6 +6,7 @@ import SectionContent from "../../Components/SectionContent";
 import TitleContent from "../../Components/TitleContent";
 import Input from "../../Components/Input";
 import Button from "../../Components/Button";
+import QuestionsContent from "../../Components/QuestionsContent";
 
 class Section extends Component {
   constructor(props) {
@@ -57,9 +58,34 @@ class Section extends Component {
               <div className={`${styles.dot} ${styles.dotTwo}`} />
               <div className={`${styles.dot} ${styles.dotThree}`} />
             </div>
-            <Button to="/student/questions">Questions</Button>
+            <Button type="button" onclick={() => this.handleClick("fourth")}>
+              Questions
+            </Button>
           </SectionContent>
         );
+      case "fourth":
+        const questions = {
+          question: `Pergunta 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Maecenas leo justo, condimentum imperdiet ornare in, tempor nec quam.
+        Maecenas quis luctus ipsum.`,
+          answers: [
+            `A - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          leo justo, condimentum imperdiet ornare in, tempor nec quam. Maecenas
+          quis luctus ipsum.`,
+            `B - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          leo justo, condimentum imperdiet ornare in, tempor nec quam. Maecenas
+          quis luctus ipsum.`,
+            `C - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          leo justo, condimentum imperdiet ornare in, tempor nec quam. Maecenas
+          quis luctus ipsum.`,
+            `D - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          leo justo, condimentum imperdiet ornare in, tempor nec quam. Maecenas
+          quis luctus ipsum.`
+          ],
+          tip: `Dica: Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
+          team: 1
+        };
+        return <QuestionsContent questions={questions} />;
       default:
         return (
           <SectionContent>
@@ -86,6 +112,11 @@ class Section extends Component {
       case "third":
         this.setState({
           content: "third"
+        });
+        break;
+      case "fourth":
+        this.setState({
+          content: "fourth"
         });
         break;
       default:

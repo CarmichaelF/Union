@@ -8,7 +8,7 @@ import TitleContent from "../../Components/TitleContent";
 export default () => {
   return (
     <div className={styles.stats}>
-      <Sidebar />
+      <Sidebar type="teacher" />
       <Container>
         <SectionContent>
           <TitleContent>Estatísticas:</TitleContent>

@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import styles from "../../Styles/FirstPage.module.css";
 import LoginForm from "../../Components/LoginForm";
 import Title from "../../Components/Title";
 
-class FirstPage extends Component {
-  render() {
-    const { title } = this.props;
+export default (props) =>{
+  const { title } = this.props;
     return (
       <div className={`${styles.firstPage} wrapper`}>
         <Title>{title}</Title>
@@ -19,7 +18,4 @@ class FirstPage extends Component {
         </div>
       </div>
     );
-  }
-}
-
-export default FirstPage;
+};

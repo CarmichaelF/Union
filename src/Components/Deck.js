@@ -8,7 +8,7 @@ export default props => {
     case "add":
       return (
         <div className={styles.deck}>
-          <Button to="/teacher/config" type="transparent">
+          <Button to="/teacher/teams" type="transparent">
             {" "}
             <i className={`fas fa-plus ${styles.plusIcon}`} />
           </Button>
@@ -17,7 +17,7 @@ export default props => {
     default:
       return (
         <div className={styles.deck}>
-          <Button to="teacher/config" type="transparent">
+          <Button to="/teacher/teams" type="transparent">
             <h1 className={styles.deckTitle}>{title}</h1>
           </Button>
           <h2 className={styles.deckSubtitle}>

@@ -8,19 +8,19 @@ import ProfileContent from "../../Components/ProfileContent";
 export default () => {
   return (
     <div className={styles.profile}>
-      <Sidebar />
+      <Sidebar type="teacher" />
       <Container>
         <ProfileContent>
-          <Input name="name" placeholder="Carmichael">
+          <Input name="name" placeholder="João">
             Nome:{" "}
           </Input>
-          <Input name="surname" placeholder="Ferreira">
+          <Input name="surname" placeholder="Augusto">
             Sobrenome:{" "}
           </Input>
           <Input
             name="email"
             type="e-mail"
-            placeholder="carmichaelferreira06@gmail.com"
+            placeholder="joaoaugusto009@gmail.com"
           >
             E-mail:{" "}
           </Input>

@@ -35,13 +35,21 @@ export default props => {
       );
     case "buttonGreen":
       return (
-        <button onClick={onclick} className={`${types.BTN} ${types.GREEN}`} to={to}>
+        <button
+          onClick={onclick}
+          className={`${types.BTN} ${types.GREEN}`}
+          to={to}
+        >
           {children}
         </button>
       );
     case "buttonRed":
       return (
-        <button onClick={onclick} className={`${types.BTN} ${types.RED}`} to={to}>
+        <button
+          onClick={onclick}
+          className={`${types.BTN} ${types.RED}`}
+          to={to}
+        >
           {children}
         </button>
       );
