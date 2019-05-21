@@ -25,15 +25,30 @@ class LoginForm extends Component {
 
   handleClick(event) {
     event.preventDefault();
-    return this.isAuthenticated({
+    this.isAuthenticated({
       login: this.state.login,
       password: this.state.password
     });
   }
 
   isAuthenticated(loginInfo) {
-    console.log(loginInfo);
-    return true;
+    // var myInit = {
+    //   method: 'post',
+    //   body: loginInfo
+    // }
+
+    // fetch('http://localhost/api/product/login.php', myInit)
+    //   .then(response =>
+    //     response === '' ?
+    //       this.props.history.push("/")
+    //       :
+    //       response.type === 'student'
+    //         ? this.props.history.push("/student/section")
+    //         : this.props.history.push("/teacher/section"));
+    loginInfo.type = 'student';
+    loginInfo.type === 'student'
+            ? this.props.history.push("/student/section")
+            : this.props.history.push("/teacher/section")
   }
 
   render() {
@@ -57,29 +72,14 @@ class LoginForm extends Component {
         </div>
 
         <div className={styles.btnGroup}>
-          {this.state.login === "s" ? (
-            <Button
-              type="button"
-              onclick={event =>
-                this.handleClick(event)
-                  ? this.props.history.push("/student/section")
-                  : this.props.history.push("/")
-              }
-            >
-              Login
+          <Button
+            type="button"
+            onclick={event =>
+              this.handleClick(event)
+            }
+          >
+            Login
             </Button>
-          ) : (
-            <Button
-              type="button"
-              onclick={event =>
-                this.handleClick(event)
-                  ? this.props.history.push("/teacher/section")
-                  : this.props.history.push("/")
-              }
-            >
-              Login
-            </Button>
-          )}
           <Button type="outline" to="/signup">
             Cadastre-se
           </Button>
