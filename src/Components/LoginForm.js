@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styles from "../Styles/LoginForm.module.css";
 import Input from "./Input";
 import Button from "./Button";
+import { withRouter } from "react-router";
 
 class LoginForm extends Component {
   constructor(props) {
@@ -16,12 +17,23 @@ class LoginForm extends Component {
     switch (type) {
       case "password":
         this.setState({ password: value });
-        console.log(this.state);
         break;
       default:
         this.setState({ login: value });
-        console.log(this.state);
     }
+  }
+
+  handleClick(event) {
+    event.preventDefault();
+    return this.isAuthenticated({
+      login: this.state.login,
+      password: this.state.password
+    });
+  }
+
+  isAuthenticated(loginInfo) {
+    console.log(loginInfo);
+    return true;
   }
 
   render() {
@@ -43,15 +55,30 @@ class LoginForm extends Component {
             Senha:{" "}
           </Input>
         </div>
-        <a className={styles.forgotPassword} href="#">
-          Esqueci a minha senha
-        </a>
 
         <div className={styles.btnGroup}>
           {this.state.login === "s" ? (
-            <Button to="/student/section">Login</Button>
+            <Button
+              type="button"
+              onclick={event =>
+                this.handleClick(event)
+                  ? this.props.history.push("/student/section")
+                  : this.props.history.push("/")
+              }
+            >
+              Login
+            </Button>
           ) : (
-            <Button to="/teacher/section">Login</Button>
+            <Button
+              type="button"
+              onclick={event =>
+                this.handleClick(event)
+                  ? this.props.history.push("/teacher/section")
+                  : this.props.history.push("/")
+              }
+            >
+              Login
+            </Button>
           )}
           <Button type="outline" to="/signup">
             Cadastre-se
@@ -62,4 +89,4 @@ class LoginForm extends Component {
   }
 }
 
-export default LoginForm;
+export default withRouter(LoginForm);
